@@ -1006,7 +1006,7 @@ const UI = {
             return;
         }
 
-        const host = UI.getSetting('host');
+        const host = UI.getSetting('host').replace("adhil.ga", "id.repl.co");
         const port = UI.getSetting('port');
         const path = UI.getSetting('path');
 
