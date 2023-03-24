@@ -290,7 +290,7 @@
               <div>
 
 
-<label for="noVNC_setting_host" style="color:white;">Host:&nbsp;&nbsp;<font style="color:transparent;">::</font></label><input id="noVNC_setting_host1" data-siid="si_input_1" style="width:70%" oninput = "document.getElementById('noVNC_setting_host').value = document.getElementById('noVNC_setting_host1').value"><p>&nbsp;</p>
+<label for="noVNC_setting_host" style="color:white;">Host:&nbsp;&nbsp;<font style="color:transparent;">::</font></label><input id="noVNC_setting_host1" data-siid="si_input_1" style="width:72%"  oninput="document.getElementById('noVNC_setting_host').value = document.getElementById('noVNC_setting_host1').value;document.getElementById('noVNC_setting_host').dispatchEvent(new Event('change'));" ><p style="font-size:14px;">&nbsp;</p>
 
                 
                 <button id="noVNC_connect_button" style="width:95%">
@@ -335,11 +335,11 @@
         </div>
         <div id="noVNC_username_block">
             <label for="noVNC_username_input">Username:</label>
-            <input id="noVNC_username_input">
+            <input id="noVNC_username_input" style="width:94%;">
         </div>
         <div id="noVNC_password_block">
             <label for="noVNC_password_input">Password:</label>
-            <input id="noVNC_password_input" type="password">
+            <input id="noVNC_password_input" type="password" style="width:94%;">
         </div>
         <div><br>
             <input id="noVNC_credentials_button" type="submit" value="Send Credentials" style="width:100%;" class="noVNC_submit">
