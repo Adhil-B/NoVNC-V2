@@ -286,7 +286,7 @@ html {
   z-index: -1;
   cursor: pointer;
   border-radius: 5px;
-  background-color: rgb(83, 99, 122);
+  background-color: rgb(51 51 51);
   background-image: url("../images/handle_bg.svg");
   background-repeat: no-repeat;
   background-position: right;
@@ -443,10 +443,10 @@ html {
 
   padding: 15px;
 
-  background: #fff;
+  background: #333333;
   border-radius: 10px;
-  color: #000;
-  border: 2px solid #E0E0E0;
+  color: #ffffff;
+  border: 2px solid #6b6a6a;
   box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.5);
 }
 .noVNC_panel.noVNC_open {
@@ -492,9 +492,10 @@ html {
 }
 
 .noVNC_panel .noVNC_heading {
-  background-color: rgb(110, 132, 163);
+  background-color: #0101017d;
   border-radius: 5px;
   padding: 5px;
+  text-align: center;
   /* Compensate for padding in image */
   padding-right: 8px;
   color: white;
@@ -526,7 +527,7 @@ html {
   margin: 5px;
   margin-left: 10px;
   padding: 5px;
-  background: rgba(0, 0, 0, 0.05);
+  background: rgb(0 0 0 / 13%);
   border-radius: 5px;
 }
 .noVNC_expander:not(.noVNC_open) ~ * {
@@ -752,9 +753,9 @@ html {
 
   cursor: pointer;
 
-  border-color: #333333;
-  border-radius: 5px;
-  background: linear-gradient(to top, #333333, #333333);
+  border-color: black;
+  border-radius: 6px;
+  background: linear-gradient(to top, #1c1d1f, #1c1d1f);
   /*background: linear-gradient(to top, rgb(110, 132, 163), rgb(99, 119, 147));*/
   color: white;
 
@@ -762,7 +763,7 @@ html {
   vertical-align: middle;
 }
 #noVNC_connect_button:hover {
-  background: linear-gradient(to top, #333333, #333333);
+  background: linear-gradient(to top, #161718, #161718);
 }
 
 #noVNC_connect_button img {
