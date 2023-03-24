@@ -13,7 +13,7 @@
     or the fragment:
         http://example.com/#host=HOST&port=PORT&encrypt=1
     -->
-    <title>noVNC</title>
+    <title>Cloud - VNC Client</title>
 
     <link rel="icon" type="image/x-icon" href="app/images/icons/novnc.ico">
 
@@ -197,7 +197,7 @@
                                     </li>
                                     <li>
                                         <label for="noVNC_setting_host">Host:</label>
-                                        <input id="noVNC_setting_host">
+                                        <input id="noVNC_setting_host" oninput = "document.getElementById('noVNC_setting_host1').value = document.getElementById('noVNC_setting_host').value">
                                     </li>
                                     <li>
                                         <label for="noVNC_setting_port">Port:</label>
@@ -225,7 +225,7 @@
                             <!-- Logging selection dropdown -->
                             <li>
                                 <label>Logging:
-                                    <select id="noVNC_setting_logging" name="vncLogging">
+                                    <select id="noVNC_setting_logging" name="vncLogging" style="width:64%;">
                                     </select>
                                 </label>
                             </li>
@@ -261,12 +261,43 @@
     <!-- Connect button -->
     <div class="noVNC_center">
         <div id="noVNC_connect_dlg">
-            <p class="noVNC_logo" translate="no"><span>no</span>VNC</p>
-            <div>
-                <button id="noVNC_connect_button">
+
+            <p class="noVNC_logo" translate="no">Cloud</p>
+            
+
+
+
+ 
+                                        <!--label 
+          
+          <span>no</span>VN
+          
+          for="noVNC_setting_host3332" style="color:white;font-size:20px;"><b>Host: &nbsp;</b></label>
+                                        <input id="noVNC_setting_host" width="100%">
+
+
+<br><p style="color:white;font-size:8px;">&nbsp;</p>
+<label style="color:white;font-size:18px;"><input id="noVNC_setting_reconnect22" type="checkbox" >Autoconnect</label>
+
+<div><label for="noVNC_setting_host" style="color:white;">Host:&nbsp;&nbsp;<font style="color:transparent;">::</font></label><input id="noVNC_setting_host" data-siid="si_input_1">
+
+</div>
+          
+<p>   </p-->
+
+              <div>
+
+
+<label for="noVNC_setting_host" style="color:white;">Host:&nbsp;&nbsp;<font style="color:transparent;">::</font></label><input id="noVNC_setting_host1" data-siid="si_input_1" style="width:70%" oninput = "document.getElementById('noVNC_setting_host').value = document.getElementById('noVNC_setting_host1').value"><p>&nbsp;</p>
+
+                
+                <button id="noVNC_connect_button" style="width:95%">
                     <img alt="" src="app/images/connect.svg"> Connect
                 </button>
-            </div>
+            </div><p>&nbsp;</p>
+          
+                               <center> </center>
+                            
         </div>
     </div>
 
@@ -308,8 +339,8 @@
             <label for="noVNC_password_input">Password:</label>
             <input id="noVNC_password_input" type="password">
         </div>
-        <div>
-            <input id="noVNC_credentials_button" type="submit" value="Send Credentials" class="noVNC_submit">
+        <div><br>
+            <input id="noVNC_credentials_button" type="submit" value="Send Credentials" style="width:100%;" class="noVNC_submit">
         </div>
     </form></div>
     </div>
