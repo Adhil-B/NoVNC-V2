@@ -737,7 +737,7 @@ html {
   }
 }
 #noVNC_connect_dlg div {
-  padding: 12px;
+  padding: 20px;
   background-color: #333333;
   /*background-color: rgb(110, 132, 163);*/
   border-radius: 12px;
