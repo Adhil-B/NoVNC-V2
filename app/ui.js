@@ -175,8 +175,8 @@ const UI = {
         UI.initSetting('encrypt', (window.location.protocol === "https:"));
         UI.initSetting('view_clip', false);
         UI.initSetting('resize', 'off');
-        UI.initSetting('quality', 6);
-        UI.initSetting('compression', 2);
+        UI.initSetting('quality', 5);
+        UI.initSetting('compression', 8);
         UI.initSetting('shared', true);
         UI.initSetting('view_only', false);
         UI.initSetting('show_dot', false);
@@ -754,6 +754,7 @@ const UI = {
         }
         WebUtil.setSetting(name, val);
         UI.updateSetting(name);
+        document.getElementById('noVNC_setting_host1').value = document.getElementById('noVNC_setting_host').value
         return val;
     },
 
@@ -815,6 +816,7 @@ const UI = {
             }
         }
         return val;
+
     },
 
     // These helpers compensate for the lack of parent-selectors and
