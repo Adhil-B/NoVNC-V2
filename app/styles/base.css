@@ -47,7 +47,9 @@ body {
 html {
   height:100%;
 }
-
+div#noVNC_fallback_error {
+    display: none;
+}
 .noVNC_only_touch.noVNC_hidden {
   display: none;
 }
